@@ -1,0 +1,14 @@
+{
+  "name": "file-manager-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/main.js",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "type": "module",
+  "scripts": {
+    "start" : "node src/main.js"
+  },
+  "license": "ISC"
+}
