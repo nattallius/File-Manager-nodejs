@@ -37,7 +37,7 @@ export class FileService {
             const fileExists = await access(newFilePath, fs.constants.F_OK).then(() => true, () => false);
             if (fileExists) throw new Error();
 
-            await rename(oldFilePath, path.join(dir, newFilePath));
+            await rename(oldFilePath, newFilePath);
             console.log('File renamed!');
         } catch (e) {
             throw new Error(ERRORS.OPERATION_FAILED);
