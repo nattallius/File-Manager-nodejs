@@ -4,7 +4,7 @@ import {ERRORS} from "../constants/errors.js";
 export class OperatingSystemService {
     static getInfo(command) {
         switch (command) {
-            case '--eol':
+            case '--EOL':
                 this.getEOL();
                 break;
             case '--cpus':
